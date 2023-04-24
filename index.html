@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="index.css"> -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+
+        <div id="ara">
+            {{text}}
+            <ul>
+                <todo-li v-for="item in list" v-bind:list="item" v-bind:key="item"></todo-li>
+            </ul>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
